@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edie homepage</title>
     <link rel="stylesheet" href="./components/style.css">
+    <link rel="stylesheet" href="./components/navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    
+    <div class="container">
+
+        <nav>
+            <ul class="sidebar">
+                
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Our">Our Works</a></li>
+                <li><a href="#Clients">Clients</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Edie</a></li>
+                <li class="hideOnMobile"><a href="#Home">Home</a></li>
+                <li class="hideOnMobile"><a href="#Services">Services</a></li>
+                <li class="hideOnMobile"><a href="#Our">Our Works</a></li>
+                <li class="hideOnMobile"><a href="#Clients">Clients</a></li>
+                <li class="hideOnMobile"><a href="#Contact">Contact</a></li>
+                <li class="menu-button" onclick=displaySidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                
+            </ul>
+        </nav>
+
+
+        <h1 style="border: 2px solid red;"> I can go to certain locations by selecting links in navigation or footer</h1>
+    </div>
+
+
+    <script src="./components/navbar.js"></script>
     <script src="./components/content.js"></script>
 </body>
 </html>
