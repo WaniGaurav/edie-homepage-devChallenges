@@ -11,31 +11,42 @@
 <body>
     <div class="container">
 
-        <nav>
+        <nav class="navBar">
             <ul class="sidebar">
                 
                 <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#Our">Our Works</a></li>
-                <li><a href="#Clients">Clients</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a class="navItems" href="#Home">Home</a></li>
+                <li><a class="navItems" href="#Services">Services</a></li>
+                <li><a class="navItems" href="#Our">Our Works</a></li>
+                <li><a class="navItems" href="#Clients">Clients</a></li>
+                <li><a class="navItems" href="#Contact">Contact</a></li>
             </ul>
             <ul>
-                <li><a href="#">Edie</a></li>
-                <li class="hideOnMobile"><a href="#Home">Home</a></li>
-                <li class="hideOnMobile"><a href="#Services">Services</a></li>
-                <li class="hideOnMobile"><a href="#Our">Our Works</a></li>
-                <li class="hideOnMobile"><a href="#Clients">Clients</a></li>
-                <li class="hideOnMobile"><a href="#Contact">Contact</a></li>
+                <li><a class="navHeading" href="#">Edie</a></li>
+                <li class="hideOnMobile navItems"><a href="#Home">Home</a></li>
+                <li class="hideOnMobile navItems"><a href="#Services">Services</a></li>
+                <li class="hideOnMobile navItems"><a href="#Our">Our Works</a></li>
+                <li class="hideOnMobile navItems"><a href="#Clients">Clients</a></li>
+                <li class="hideOnMobile navItems"><a href="#Contact">Contact</a></li>
                 <li class="menu-button" onclick=displaySidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 
             </ul>
         </nav>
 
+        <section class="sectionContent">
+            <span class="headinglink">Unhappy with your website?</span>
+            <span class="heading">We create beautiful and fast web services</span>
+            <img class="heroImage" src="./images/heroImage.jpg" alt="Hero-Image">
+            <span class="subHeading">Story, emotion and purposes</span>
+        </section>
 
-        <h1 style="border: 2px solid red;"> I can go to certain locations by selecting links in navigation or footer</h1>
+        <footer>
+
+        </footer>
+
     </div>
+    <br><br><br><br><br><br><br><br><br>
+    <h1 style="border: 2px solid red;"> I can go to certain locations by selecting links in navigation or footer</h1>
 
 
     <script src="./components/navbar.js"></script>

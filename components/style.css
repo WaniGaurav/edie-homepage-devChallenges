@@ -1,5 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --clr-primary:#333333;
+
+    --fs-navItems:1.5rem;
+    --fs-navHeading:2.25rem;
+    --fs-headinglink:1.125rem;
+    --fs-heading:3rem;
+    --fs-subHeading:3rem;
+
+    --heading-width:33.938rem;
+    --heading-height:9rem;
+    --subHeading-width:22.875rem;
+    --subHeading-height:8.813rem;
+}
+
+@media (width < 800px){
+    :root{
+        --fs-navHeading:1.5rem;
+        --fs-headinglink:0.75rem;
+        --fs-heading:1.5rem;
+        --fs-subHeading:1.5rem;
+
+        --heading-width:17rem;
+        --heading-height:4.5rem;
+        --subHeading-width:14.188rem;
+        --subHeading-height:3.625rem;
+    }
+}
+
+.container{
+    width: min(100%, 1440px);
+    margin: auto;
+}
+/* .navBar{
+    width: min(100%, 1440px);
+} */
+.sectionContent{
+    width: min(100%, 1110px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+}
+
+.navItems{
+    font-family: Poppins;
+    font-size: var(--fs-navItems);
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-primary);
+}
+.navHeading{
+    font-family: Heebo;
+    font-size: var(--fs-navHeading);
+    font-weight: 800;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-primary);
+}
+.headinglink{
+    font-family: Poppins;
+    font-size: var(--fs-headinglink);
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2D9CDB;
+}
+.heading{
+    width: var(--heading-width);
+    height: var(--heading-height);
+    font-family: Poppins;
+    font-size: var(--fs-heading);
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-primary);
+}
+.heroImage{
+    border: 12px solid brown;
+}
+.subHeading{
+    width:var(--subHeading-width);
+    height: var(--subHeading-height);
+    font-family: Poppins;
+    font-size: var(--fs-subHeading);
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-primary);    
 }
