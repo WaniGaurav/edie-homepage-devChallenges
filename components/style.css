@@ -216,6 +216,9 @@
     color: #F2F2F2;
 }
 .service-card-div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* width: inherit; */
     border: 2px solid blueviolet;
 }
 .service-heading{
@@ -230,21 +233,69 @@
     letter-spacing: 0em;
     color: var(--clr-primary);
 }
+.cart-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 .service-cards{
     width: 341px;
     height: 459.86279296875px;
     padding: 46px 33px 0px 33px;
-
-    border: 2px solid blue;
 }
 .card-symbol-background{
+    align-items: center;
+    justify-content: center;
     width: 67px;
     height: 67px;
     border-radius: 16px;
-
-    border: 2px solid lawngreen;
+    /* background-color: #2D9CDB; */
+    /* border: 2px solid lawngreen; */
 }
-.material-symbols-rounded{
-  font-variation-settings:
-  'FILL' 1
+.symbol-design{
+    color: #FFFFFF;
+}
+.material-symbols-sharp {
+    font-size: 36px;
+}
+.material-symbols-rounded {
+    font-size: 36px;
+}
+.service-name{
+    margin: 35px 0 24px 0;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-primary);
+}
+.service-name-desc{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4F4F4F;
+}
+.service-start{
+    border: 0;
+    margin-top: 30px;
+    width: 116px;
+    height: 42px;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #828282;
+    background-color: #E0E0E0;
+    
+}
+.service-card-div button:hover{
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #2D9CDB;
 }
