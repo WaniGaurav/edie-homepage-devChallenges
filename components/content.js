@@ -1,3 +1,13 @@
+// navbar scrolling padding
+const navigation = document.querySelector(".navBar")
+
+const navigationHeight = navigation.offsetHeight;
+
+document.documentElement.style.setProperty(
+  "--scroll-padding",
+  navigationHeight + "px"
+);
+
 
 let cardData = [
     {

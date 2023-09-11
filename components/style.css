@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 5rem);
+}
+
 :root {
     --clr-primary:#333333;
     --navBar-margin:2.625rem;
@@ -12,6 +17,7 @@
     --home-description-margin:2.625rem;
     --service-heading-margin-top:12.5rem;
     --service-heading-margin-bottom:2.625rem;
+    --cart-grid-column-gap:2.5rem;
 
     --fs-navItems:1.5rem;
     --fs-navHeading:2.25rem;
@@ -21,6 +27,10 @@
     --fs-email-contact-heading:0.875rem;
     --fs-email-div_input:1.125rem;
     --fs-blue-join:1.125rem;
+    --fs-service-heading:2.25rem;
+    --fs-service-name:1.5rem;
+    --fs-service-name-desc:1rem;
+    --fs-service-start:1rem
 
     --heading-width:33.938rem;
     --heading-height:9rem;
@@ -34,6 +44,11 @@
     --email-div-height:3.563rem;
     --heroImage-width:83.25rem;
     --heroImage-height:22.125rem;
+    --service-card-div-width:73.75rem;
+    --service-heading-width:21.625rem;
+    --service-heading-height:6.75rem;
+    --service-cards-width:21.313rem;
+    --service-cards-height:28.741rem;
 }
 
 @media (width < 800px){
@@ -43,6 +58,7 @@
         --home-description-margin:1.938rem;
         --service-heading-margin-top:6.375rem;
         --service-heading-margin-bottom:2.875rem;
+        --cart-grid-row-gap:2.5rem;
 
         --fs-navHeading:1.5rem;
         --fs-headinglink:0.75rem;
@@ -51,6 +67,7 @@
         --fs-email-contact-heading:0.625rem;
         --fs-email-div_input:0.875rem;
         --fs-blue-join:0.875rem;
+        --fs-service-heading:1.5rem;
 
         --heading-width:17rem;
         --heading-height:4.5rem;
@@ -64,6 +81,10 @@
         --email-div-height:4.25rem;
         --heroImage-width:21.75rem;
         --heroImage-height:9.063rem;
+        --service-heading-width:16.188rem;
+        --service-heading-height:4.5rem;
+        --service-cards-width:21.313rem;
+        --service-cards-height:26.375rem;
     }
 }
 
@@ -77,6 +98,9 @@
 }
 .navBar{
     margin-top: var(--navBar-margin);
+    position: sticky;
+    top: 0;
+    /* border: 2px solid gold; */
 }
 /* .sectionContent > :not(img){ */
 .sectionContent{
@@ -216,18 +240,20 @@
     color: #F2F2F2;
 }
 .service-card-div{
+    width: var(--service-card-div-width);
+    position: relative;
+    left: -6.7rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* width: inherit; */
     border: 2px solid blueviolet;
 }
 .service-heading{
     margin-top: var(--service-heading-margin-top);
     margin-bottom: var(--service-heading-margin-bottom);
-    width: 346px;
-    height: 108px;
+    width: var(--service-heading-width);
+    height: var(--service-heading-height);
     font-family: Poppins;
-    font-size: 36px;
+    font-size: var(--fs-service-heading);
     font-weight: 500;
     line-height: 54px;
     letter-spacing: 0em;
@@ -236,17 +262,18 @@
 .cart-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--cart-grid-column-gap);
 }
 .service-cards{
-    width: 341px;
-    height: 459.86279296875px;
-    padding: 46px 33px 0px 33px;
+    width: var(--service-cards-width);
+    height: var(--service-cards-height);
+    padding: 2.875rem 2.063rem 0px 2.063rem;
 }
 .card-symbol-background{
     align-items: center;
     justify-content: center;
-    width: 67px;
-    height: 67px;
+    width: 4.188rem;
+    height: 4.188rem;
     border-radius: 16px;
     /* background-color: #2D9CDB; */
     /* border: 2px solid lawngreen; */
@@ -261,9 +288,9 @@
     font-size: 36px;
 }
 .service-name{
-    margin: 35px 0 24px 0;
+    margin: 2.188rem 0 1.5rem 0;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: var(--fs-service-name);
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0em;
@@ -272,7 +299,7 @@
 }
 .service-name-desc{
     font-family: Poppins;
-    font-size: 16px;
+    font-size: var(--fs-service-name-desc);
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
@@ -281,12 +308,12 @@
 }
 .service-start{
     border: 0;
-    margin-top: 30px;
-    width: 116px;
-    height: 42px;
+    margin-top: 1.875rem;
+    width: 7.25rem;
+    height: 2.625rem;
     border-radius: 12px;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: var(--fs-service-start);
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
