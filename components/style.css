@@ -30,7 +30,8 @@ html{
     --fs-service-heading:2.25rem;
     --fs-service-name:1.5rem;
     --fs-service-name-desc:1rem;
-    --fs-service-start:1rem
+    --fs-service-start:1rem;
+    --fs-our-heading:2.25rem;
 
     --heading-width:33.938rem;
     --heading-height:9rem;
@@ -44,11 +45,13 @@ html{
     --email-div-height:3.563rem;
     --heroImage-width:83.25rem;
     --heroImage-height:22.125rem;
-    --service-card-div-width:73.75rem;
+    --service-card-div-width:69.75rem;
     --service-heading-width:21.625rem;
     --service-heading-height:6.75rem;
     --service-cards-width:21.313rem;
     --service-cards-height:28.741rem;
+    --our-heading-width:28rem;
+    --our-heading-height:6.75rem;
 }
 
 @media (width < 800px){
@@ -68,6 +71,7 @@ html{
         --fs-email-div_input:0.875rem;
         --fs-blue-join:0.875rem;
         --fs-service-heading:1.5rem;
+        --fs-our-heading:1.5rem;
 
         --heading-width:17rem;
         --heading-height:4.5rem;
@@ -85,6 +89,8 @@ html{
         --service-heading-height:4.5rem;
         --service-cards-width:21.313rem;
         --service-cards-height:26.375rem;
+        --our-heading-width:16.688rem;
+        --our-heading-height:4.5rem;
     }
 }
 
@@ -245,7 +251,7 @@ html{
     left: -6.7rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
 }
 .service-heading{
     margin-top: var(--service-heading-margin-top);
@@ -263,6 +269,7 @@ html{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: var(--cart-grid-column-gap);
+    box-shadow: 0px 10px 30px 0px #33333352;
 }
 .service-cards{
     width: var(--service-cards-width);
@@ -325,4 +332,52 @@ html{
     cursor: pointer;
     color: #FFFFFF;
     background-color: #2D9CDB;
+}
+.our-heading{
+    margin-top: 20rem;
+    width: var(--our-heading-width);
+    height: var(--our-heading-height);
+    font-family: Poppins;
+    font-size: var(--fs-our-heading);
+    font-weight: 500;
+    letter-spacing: 0em;
+    border: 2px solid red;
+}
+.work-gallary{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    height: fit-content;
+    column-gap: 20px;
+    border: 2px solid red;
+}
+.work-gallary div:nth-child(odd){
+    margin-top: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.work-images{
+    width: 545px;
+    height: 545px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.workTech{
+    width: 183.88px;
+    height: 26.45px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0em;
+    color: #828282;
+}
+.workHeadline{
+    width: 367.77px;
+    height: 45.34px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: var(--clr-primary);
 }

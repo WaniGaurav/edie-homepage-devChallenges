@@ -33,6 +33,31 @@ let cardData = [
     }
 ];
 
+
+let workData = [
+    {
+        imageName:'smarthome.jpg',
+        techName:'Full stack application',
+        workHeadline:'Smart home dashboard'
+    },
+    {
+        imageName:'onboard.png',
+        techName:'UX/UI design',
+        workHeadline:'Onboard application'
+    },
+    {
+        imageName:'booking.png',
+        techName:'Mobile application',
+        workHeadline:'Booking system'
+    },
+    {
+        imageName:'juice-product.png',
+        techName:'Front End application',
+        workHeadline:'Juice product homepage'
+    }
+    
+];
+
 let cartContainer = document.querySelector(".cart-grid");
 
 let cartCreate = () => {
@@ -50,3 +75,19 @@ let cartCreate = () => {
 }
 
 cartCreate();
+
+
+let workContainer = document.querySelector(".work-gallary")
+
+let workCreate = ()=>{
+    workData.map((postData)=>{
+        let divtag = document.createElement("div")
+        divtag.classList.add("img-container");
+        divtag.innerHTML =`<img class="work-images" src="./images/works/${postData.imageName}" alt="">
+        <p class="workTech">${postData.techName}</p>
+        <p class="workHeadline">${postData.workHeadline}</p>`;
+        workContainer.appendChild(divtag);
+    })
+}
+
+workCreate();
