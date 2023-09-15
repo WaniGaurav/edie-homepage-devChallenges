@@ -78,16 +78,27 @@ cartCreate();
 
 
 let workContainer = document.querySelector(".work-gallary")
+// let seeContainer = document.querySelector(".img-container4")
+let counter = 1;
 
 let workCreate = ()=>{
     workData.map((postData)=>{
+        // let a = Object.getOwnPropertySymbols(postData);
+        // console.log(a.length);
         let divtag = document.createElement("div")
-        divtag.classList.add("img-container");
+        divtag.classList.add("img-container", `img-container${counter}`);
         divtag.innerHTML =`<img class="work-images" src="./images/works/${postData.imageName}" alt="">
         <p class="workTech">${postData.techName}</p>
         <p class="workHeadline">${postData.workHeadline}</p>`;
         workContainer.appendChild(divtag);
+        counter++;
     })
+    
+        // let innerdivtag = document.createElement("div")
+        // innerdivtag.classList.add("seemoreDiv");
+        // innerdivtag.innerHTML = `<span class="see-more">see more</span><span class="arrow-right material-symbols-outlined">trending_flat</span>`
+        // workContainer.appendChild(innerdivtag)
+    
 }
 
 workCreate();
