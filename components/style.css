@@ -19,6 +19,9 @@ html{
     --service-heading-margin-bottom:2.625rem;
     --cart-grid-column-gap:2.5rem;
     --Our-margin-top:20rem;
+    --Clients-margin-top:13.717rem;
+    --clients-info-div-gap:11.75rem;
+    --teamPicture-gap:1.5rem;
 
     --fs-navItems:1.5rem;
     --fs-navHeading:2.25rem;
@@ -64,6 +67,15 @@ html{
     --workHeadline-height:2.834rem;
     --see-more-width:7.063rem;
     --see-more-height:2.25rem;
+    --Clients-width:69.75rem;
+    --teamPicture-width:39.714rem;
+    --teamPicture-height:36.5rem;
+    --teamImage1-width:20rem;
+    --teamImage1-height:20rem;
+    --teamImage2-width:16.25rem;
+    --teamImage2-height:16.25rem;
+    --teamImage3-width:18.214rem;
+    --teamImage3-height:18.75rem;
 }
 
 @media (width < 800px){
@@ -75,6 +87,9 @@ html{
         --service-heading-margin-bottom:2.875rem;
         --cart-grid-row-gap:2.5rem;
         --Our-margin-top:11rem;
+        --Clients-margin-top:6.25rem;
+        --clients-info-div-gap:2.25rem;
+        --teamPicture-gap:0.557rem;
 
         --fs-navHeading:1.5rem;
         --fs-headinglink:0.75rem;
@@ -115,6 +130,15 @@ html{
         --workHeadline-height:1.889rem;
         --see-more-width:5.313rem;
         --see-more-height:1.688rem;
+        --Clients-width:21.813rem;
+        --teamPicture-width:21.833rem;
+        --teamPicture-height:20.043rem;
+        --teamImage1-width:11.135rem;
+        --teamImage1-height:11.135rem;
+        --teamImage2-width:9.048rem;
+        --teamImage2-height:9.048rem;
+        --teamImage3-width:10.141rem;
+        --teamImage3-height:10.439rem;
     }
 }
 
@@ -122,13 +146,13 @@ html{
     width: min(100%, 1380px);
     margin: auto;
 }
-
-/* Home section */
-
 .flexClass{
     display: flex;
     flex-direction: column;
 }
+
+/* Home section */
+
 .navBar{
     margin-top: var(--navBar-margin);
     position: sticky;
@@ -270,16 +294,17 @@ html{
     font-weight: 500;
     line-height: 27px;
     letter-spacing: 0em;
-    /* text-align: left; */
     color: #F2F2F2;
 }
+
+/* Service section */
+
 .service-card-div{
     width: var(--service-card-div-width);
     position: relative;
     left: -6.7rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* border: 2px solid blueviolet; */
 }
 .service-heading{
     margin-top: var(--service-heading-margin-top);
@@ -435,6 +460,10 @@ html{
     top: -4rem;
     justify-content: flex-end;
 }
+.see-more,
+.arrow-right:hover{
+    cursor: pointer;
+}
 .see-more{
     width: var(--see-more-width);
     height: var(--see-more-height);
@@ -452,31 +481,140 @@ html{
     height: 0.974rem;
     color: #2D9CDB;
 }
-.seemoreDiv .material-symbols-outlined{
+.seemoreDiv,
+ .material-symbols-outlined{
     font-size: 1.125rem;
 }
 
 /* Clients section */
 #Clients{
-    margin-top: 13.717rem;
+    margin-top: var(--Clients-margin-top);
+    width: var(--Clients-width);
+    position: relative;
+    left: -7rem;
+    /* border: 2px solid red; */
 }
 .clients-info-div{
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--clients-info-div-gap);
 }
 .teamInfo{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    width: 17.5rem;
+    /* height: 258px; */
     justify-content: center;
 }
 .teamPicture{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--teamPicture-gap);
+    width: var(--teamPicture-width);
+    height: var(--teamPicture-height);
 }
 .teamImage1{
     grid-row-start: 1;
     grid-row-end: 3;
     display: grid;
     align-self: center;
+}
+.team-Info-Heading{
+    width: 17.5rem;
+    height: 1.688rem;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: #EB5757;
+}
+.team-Info-Description{
+    margin: 0.438rem 0 0.875rem 0;
+    width: 17.5rem;
+    height: 10.125rem;
+    font-family: Poppins;
+    font-size: 2.25rem;
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: var(--clr-primary);    
+}
+.team-Info-AboutUs{
+    width: 17.063rem;
+    height: 3rem;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    color: #4F4F4F;    
+}
+.teamImage1{
+    width: var(--teamImage1-width);
+    height: var(--teamImage1-height);
+    border-radius: 24px;
+}
+.teamImage2{
+    width: var(--teamImage2-width);
+    height: var(--teamImage2-height);
+    border-radius: 24px;
+}
+.teamImage3{
+    width: var(--teamImage3-width);
+    height: var(--teamImage3-height);
+    border-radius: 24px;
+}
+
+/* review section */
+
+.review{
+    margin-top: 12.25rem;
+    width: 69.75rem;
+    position: relative;
+    left: -7rem;
+    border: 2px solid red;
+}
+
+.reviewHeading{
+    width: 937px;
+    height: 162px;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-primary);    
+}
+.reviewGrid{
+    margin-top: 2.25rem;
+    width: 19rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1.875rem;
+    /* border: 2px solid green; */
+}
+.reviewerPic{
+    width: 82px;
+    height: 82px;
+    border-radius: 12px;
+}
+.column2{
+    justify-content: space-around;
+}
+.reviewerName{
+    width: 140px;
+    height: 36px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: var(--clr-primary);
+}
+.reviewerPost{
+    width: 191px;
+    height: 27px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: #828282;    
 }

@@ -6,8 +6,9 @@ const navigationHeight = navigation.offsetHeight;
 document.documentElement.style.setProperty(
   "--scroll-padding",
   navigationHeight + "px"
-);
-
+  );
+  
+// navbar scrolling padding end
 
 let cardData = [
     {
@@ -58,6 +59,40 @@ let workData = [
     
 ];
 
+let clientInfo = [
+    {
+        classname:"team-Info-Heading",
+        content:"Meet the team",
+    },
+    {
+        classname:"team-Info-Description",
+        content:"We are chilled and a laidback team",
+    },
+    {
+        classname:"team-Info-AboutUs",
+        content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    }
+];
+
+let teamPic = [
+    {
+        src:"./images/person3.png",
+        alt:"member1",
+        classname:"teamImage",
+    },
+    {
+        src:"./images/person1.png",
+        alt:"member2",
+        classname:"teamImage",
+    },
+    {
+        src:"./images/person2.png",
+        alt:"member3",
+        classname:"teamImage",
+    }
+];
+
+// Services section
 let cartContainer = document.querySelector(".cart-grid");
 
 let cartCreate = () => {
@@ -68,37 +103,62 @@ let cartCreate = () => {
         </div>
         <p class="service-name">${postData.serviceName}</p>
         <p class="service-name-desc">
-            ${postData.serviceNameDesc}
+        ${postData.serviceNameDesc}
         </p><button type="submit" class="service-start">Get started</button>`
         cartContainer.appendChild(divtag)
     })
 }
 
 cartCreate();
+// Services section end
 
 
+// Our-works section
 let workContainer = document.querySelector(".work-gallary")
-// let seeContainer = document.querySelector(".img-container4")
 let counter = 1;
 
 let workCreate = ()=>{
     workData.map((postData)=>{
-        // let a = Object.getOwnPropertySymbols(postData);
-        // console.log(a.length);
         let divtag = document.createElement("div")
         divtag.classList.add("img-container", `img-container${counter}`);
-        divtag.innerHTML =`<img class="work-images" src="./images/works/${postData.imageName}" alt="">
+        divtag.innerHTML =`<img loading="lazy" class="work-images" src="./images/works/${postData.imageName}" alt="">
         <p class="workTech">${postData.techName}</p>
         <p class="workHeadline">${postData.workHeadline}</p>`;
         workContainer.appendChild(divtag);
         counter++;
-    })
-    
-        // let innerdivtag = document.createElement("div")
-        // innerdivtag.classList.add("seemoreDiv");
-        // innerdivtag.innerHTML = `<span class="see-more">see more</span><span class="arrow-right material-symbols-outlined">trending_flat</span>`
-        // workContainer.appendChild(innerdivtag)
-    
+    }) 
 }
 
 workCreate();
+// Our-works section end
+
+// Clients section
+let clientContainer = document.querySelector(".teamInfo")
+let teamPicContainer = document.querySelector(".teamPicture")
+
+
+let clientInfoCreate = () => {
+    clientInfo.map((postData)=>{
+        let spantag = document.createElement("span")
+        spantag.classList.add(`${postData.classname}`);
+        spantag.innerHTML = `${postData.content}`;
+        clientContainer.appendChild(spantag);
+    })
+}
+
+let teamPicCreate = () =>{
+    let counter = 1;
+    teamPic.map((postData)=>{
+        let imgtag = document.createElement("img")
+        imgtag.classList.add(`${postData.classname}`,`${postData.classname}${counter}`);
+        imgtag.loading = "lazy";
+        imgtag.src = `${postData.src}`;
+        imgtag.alt = `${postData.alt}`;
+        teamPicContainer.appendChild(imgtag);
+        counter++;
+    })
+}
+
+clientInfoCreate();
+teamPicCreate();
+// Clients section end
