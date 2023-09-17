@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -22,6 +23,8 @@ html{
     --Clients-margin-top:13.717rem;
     --clients-info-div-gap:11.75rem;
     --teamPicture-gap:1.5rem;
+    --review-margin-top:12.25rem;
+    --reviewGrid-margin-top:2.25rem;
 
     --fs-navItems:1.5rem;
     --fs-navHeading:2.25rem;
@@ -39,6 +42,7 @@ html{
     --fs-workTech:0.875rem;
     --fs-workHeadline:1.5rem;
     --fs-see-more:1.5rem;
+    --fs-reviewHeading:2.25rem;
 
     --heading-width:33.938rem;
     --heading-height:9rem;
@@ -76,6 +80,10 @@ html{
     --teamImage2-height:16.25rem;
     --teamImage3-width:18.214rem;
     --teamImage3-height:18.75rem;
+    --review-width:69.75rem;
+    --reviewHeading-width:58.563rem;
+    --reviewHeading-height:10.125rem;
+
 }
 
 @media (width < 800px){
@@ -90,6 +98,8 @@ html{
         --Clients-margin-top:6.25rem;
         --clients-info-div-gap:2.25rem;
         --teamPicture-gap:0.557rem;
+        --review-margin-top:6.25rem;
+        --reviewGrid-margin-top:1.125rem;
 
         --fs-navHeading:1.5rem;
         --fs-headinglink:0.75rem;
@@ -103,6 +113,7 @@ html{
         --fs-workTech:0.75rem;
         --fs-workHeadline:1.125rem;
         --fs-see-more:1.125rem;
+        --fs-reviewHeading:1.5rem;
 
         --heading-width:17rem;
         --heading-height:4.5rem;
@@ -139,11 +150,15 @@ html{
         --teamImage2-height:9.048rem;
         --teamImage3-width:10.141rem;
         --teamImage3-height:10.439rem;
+        --review-width:22rem;
+        --reviewHeading-width:21.938rem;
+        --reviewHeading-height:11.25rem;
+
     }
 }
 
 .container{
-    width: min(100%, 1380px);
+    width: min(100%, 1442px);
     margin: auto;
 }
 .flexClass{
@@ -567,25 +582,25 @@ html{
 /* review section */
 
 .review{
-    margin-top: 12.25rem;
-    width: 69.75rem;
+    margin-top: var(--review-margin-top);
+    width: var(--review-width);
     position: relative;
     left: -7rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .reviewHeading{
-    width: 937px;
-    height: 162px;
+    width: var(--reviewHeading-width);
+    height: var(--reviewHeading-height);
     font-family: Poppins;
-    font-size: 36px;
+    font-size: var(--fs-reviewHeading);
     font-weight: 500;
     letter-spacing: 0em;
     text-align: left;
     color: var(--clr-primary);    
 }
 .reviewGrid{
-    margin-top: 2.25rem;
+    margin-top: var(--reviewGrid-margin-top);
     width: 19rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -593,28 +608,94 @@ html{
     /* border: 2px solid green; */
 }
 .reviewerPic{
-    width: 82px;
-    height: 82px;
-    border-radius: 12px;
+    width: 5.125rem;
+    height: 5.125rem;
+    border-radius: 0.75rem;
 }
 .column2{
     justify-content: space-around;
 }
 .reviewerName{
-    width: 140px;
-    height: 36px;
+    width: 8.75rem;
+    height: 2.25rem;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 0em;
     color: var(--clr-primary);
 }
 .reviewerPost{
-    width: 191px;
-    height: 27px;
+    width: 11.938rem;
+    height: 1.688rem;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     letter-spacing: 0em;
     color: #828282;    
+}
+
+/* footer section */
+
+
+.footer{
+    background-color: #100E1D;
+    /* height:385px; */
+    width: 1442px;
+}
+
+.footerGrid{
+    padding-top: 46px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.navLinks ul li{
+    list-style: none;
+}
+.navLinks ul li a{
+    text-decoration: none;
+}
+.navLinks{
+    width: 92px;
+    height: 180px;
+
+}
+.linksName{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+
+.aboutUs a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+
+.devFooter{
+    padding-bottom:1rem;
+    align-items: center;
+}
+.devFooterText{
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: #F2F2F2;
+}
+
+.devFooterText b{
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0em;
+}
+.devFooterText strong{
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0em;
 }
