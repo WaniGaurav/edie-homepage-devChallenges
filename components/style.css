@@ -272,6 +272,7 @@ html{
     color: #828282;
 }
 .email-div{
+    margin-top: 0.563rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -295,6 +296,7 @@ html{
     letter-spacing: 0em;
     text-align: left;
     color: #BDBDBD;
+    background-color: #f2f2f2;
     border: 0;
 }
 .blue-join{
@@ -638,29 +640,35 @@ html{
 
 
 .footer{
+    /* position: relative;
+    left: -3rem; */
+    margin-top: 12.5rem;
     background-color: #100E1D;
     /* height:385px; */
     width: 1442px;
+    border: 8px solid red;
 }
 
 .footerGrid{
     padding-top: 46px;
+    /* width: var(--review-width); */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
 }
-.navLinks ul li{
-    list-style: none;
-}
-.navLinks ul li a{
+.navLinks a{
+    cursor: pointer;
     text-decoration: none;
+    border: 2px solid red;
 }
 .navLinks{
-    width: 92px;
+    width: 180px;
     height: 180px;
 
 }
 .linksName{
+    /* width: 180px;
+    height: 180px; */
     font-family: Poppins;
     font-size: 18px;
     font-weight: 400;
@@ -668,14 +676,29 @@ html{
     letter-spacing: 0em;
     color: #FFFFFF;
 }
-
+.aboutUs, .contactUs{
+    justify-self: baseline;
+}
 .aboutUs a{
     text-decoration: none;
     color: #F2F2F2;
 }
-
+.social-media-Icon img:hover{
+    cursor: pointer;
+}
+.social-media-Icon img:nth-child(2){
+    margin: 0 0.688rem;
+}
+.socialLiks{
+    width: 24px;
+    height: 24px;
+}
+.email-contact-heading-contactUs{
+    color: #F2F2F2;
+}
 
 .devFooter{
+    margin-top: 7.375rem;
     padding-bottom:1rem;
     align-items: center;
 }
