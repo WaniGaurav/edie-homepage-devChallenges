@@ -25,6 +25,8 @@ html{
     --teamPicture-gap:1.5rem;
     --review-margin-top:12.25rem;
     --reviewGrid-margin-top:2.25rem;
+    --footer-margon-top:12.5rem;
+    --footerGrid-padding-top:2.875rem;
 
     --fs-navItems:1.5rem;
     --fs-navHeading:2.25rem;
@@ -86,7 +88,7 @@ html{
 
 }
 
-@media (width < 800px){
+@media (width < 700px){
     :root{
         --navBar-margin:0.813rem;
         --heroImage-margin:0.938rem;
@@ -100,6 +102,8 @@ html{
         --teamPicture-gap:0.557rem;
         --review-margin-top:6.25rem;
         --reviewGrid-margin-top:1.125rem;
+        --footer-margon-top:6.25rem;
+        --footerGrid-padding-top:2.25rem;
 
         --fs-navHeading:1.5rem;
         --fs-headinglink:0.75rem;
@@ -156,9 +160,11 @@ html{
 
     }
 }
-
+/* body{
+    overflow-x: hidden;
+} */
 .container{
-    width: min(100%, 1442px);
+    width: max(100%, 1442px);
     margin: auto;
 }
 .flexClass{
@@ -169,10 +175,12 @@ html{
 /* Home section */
 
 .navBar{
-    margin-top: var(--navBar-margin);
+    /* margin-top: var(--navBar-margin); */
+    width: min(100%, 1442px);
+    margin: var(--navBar-margin) auto auto auto;
     position: sticky;
     top: 0;
-    /* border: 2px solid gold; */
+    border: 2px solid red;
 }
 /* .sectionContent > :not(img){ */
 .sectionContent{
@@ -180,6 +188,7 @@ html{
     margin: auto;
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     /* border: 2px solid green; */
 }
 
@@ -223,10 +232,15 @@ html{
     text-align: left;
     color: var(--clr-primary);
 }
+.imgDiv{
+    display:grid;
+    width: var(--heroImage-width);
+    position: relative;
+    left: -14rem;
+}
 .heroImage{
     margin: var(--heroImage-margin) 0;
-    align-self: center;
-    width: var(--heroImage-width);
+    width: min(100%, var(--heroImage-width));
     height: var(--heroImage-height);
     border-radius: 18px;
     /* border: 12px solid brown; */
@@ -337,12 +351,16 @@ html{
 }
 .cart-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(344px, 100%),1fr));
+    /* grid-template-columns: repeat(3, 1fr); */
     column-gap: var(--cart-grid-column-gap);
+    border: 2px solid lawngreen;
+    
 }
 .service-cards{
     width: var(--service-cards-width);
     height: var(--service-cards-height);
+    border: 2px solid violet;
     padding: 2.875rem 2.063rem 0px 2.063rem;
 }
 .service-cards:hover{
@@ -356,7 +374,6 @@ html{
     height: 4.188rem;
     border-radius: 16px;
     /* background-color: #2D9CDB; */
-    /* border: 2px solid lawngreen; */
 }
 .symbol-design{
     color: #FFFFFF;
@@ -640,18 +657,13 @@ html{
 
 
 .footer{
-    /* position: relative;
-    left: -3rem; */
-    margin-top: 12.5rem;
+    margin-top: var(--footer-margon-top);
     background-color: #100E1D;
-    /* height:385px; */
-    width: 1442px;
-    border: 8px solid red;
+    width: 90.125rem;
 }
 
 .footerGrid{
-    padding-top: 46px;
-    /* width: var(--review-width); */
+    padding-top: var(--footerGrid-padding-top);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -659,18 +671,16 @@ html{
 .navLinks a{
     cursor: pointer;
     text-decoration: none;
-    border: 2px solid red;
 }
 .navLinks{
-    width: 180px;
-    height: 180px;
+    width: 11.25rem;
+    height: 11.25rem;
 
 }
 .linksName{
-    /* width: 180px;
-    height: 180px; */
+    width: fit-content;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 36px;
     letter-spacing: 0em;
@@ -690,8 +700,8 @@ html{
     margin: 0 0.688rem;
 }
 .socialLiks{
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .email-contact-heading-contactUs{
     color: #F2F2F2;
@@ -721,4 +731,16 @@ html{
     font-size: 0.875rem;
     font-weight: 600;
     letter-spacing: 0em;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width :600px){
+    /* .cart-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%),1fr));
+        column-gap: var(--cart-grid-column-gap);
+    } */
 }
