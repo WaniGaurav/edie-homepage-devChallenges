@@ -13,6 +13,8 @@ html{
 
 :root {
     --clr-primary:#333333;
+    --clr-second:#4F4F4F;
+    --clr-third:#828282;
     --navBar-margin:2.625rem;
     --heroImage-margin:2.625rem;
     --home-description-margin:2.625rem;
@@ -204,7 +206,7 @@ html{
     line-height: 36px;
     letter-spacing: 0em;
     /*text-align: left;*/
-    color: var(--clr-primary);
+    /* color: var(--clr-primary); */
 }
 .navHeading{
     font-family: Heebo;
@@ -213,7 +215,18 @@ html{
     line-height: 53px;
     letter-spacing: 0em;
     /*text-align: left;*/
-    color: var(--clr-primary);
+    color: var(--clr-nav-primary);
+}
+.darkDiv{
+    /* margin: var(--navBar-margin) auto auto auto; */
+    margin: 1rem 0.4rem;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid green;
+}
+.dark{
+    /* align-content: end; */
+    color: #EB5757;
 }
 .headinglink{
     margin-top: 96px;
@@ -275,7 +288,7 @@ html{
     line-height: 27px;
     letter-spacing: 0em;
     /*text-align: left;*/
-    color: #4F4F4F;
+    color: var(--clr-second);;
 }
 .email-contact-div{
     width: var(--email-contact-div-width);
@@ -288,7 +301,7 @@ html{
     line-height: 21px;
     letter-spacing: 0em;
     /*text-align: left;*/
-    color: #828282;
+    color: var(--clr-third);;
 }
 .email-div{
     margin-top: 0.563rem;
@@ -416,7 +429,7 @@ html{
     line-height: 24px;
     letter-spacing: 0em;
     /*text-align: left;*/
-    color: #4F4F4F;
+    color: var(--clr-second);;
 }
 .service-start{
     border: 0;
@@ -429,11 +442,13 @@ html{
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
-    color: #828282;
+    color: var(--clr-third);
+    /* color: #828282; */
     background-color: #E0E0E0;
     
 }
-.service-card-div button:hover{
+/* .service-card-div button:hover{ */
+.service-start:hover{
     cursor: pointer;
     color: #FFFFFF;
     background-color: #2D9CDB;
@@ -451,6 +466,7 @@ html{
     font-size: var(--fs-our-heading);
     font-weight: 500;
     letter-spacing: 0em;
+    color: var(--clr-primary);
     /* border: 2px solid red; */
 }
 .work-gallary{
@@ -491,6 +507,7 @@ html{
     font-size: var(--fs-workTech);
     font-weight: 300;
     letter-spacing: 0em;
+    /* color: var(--clr-third); */
     color: #828282;
 }
 .workHeadline{
@@ -595,7 +612,7 @@ html{
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0em;
-    color: #4F4F4F;    
+    color: var(--clr-second);;    
 }
 .teamImage1{
     width: var(--teamImage1-width);
@@ -665,6 +682,7 @@ html{
     font-size: 1.125rem;
     font-weight: 500;
     letter-spacing: 0em;
+    /* color: var(--clr-third);     */
     color: #828282;    
 }
 
