@@ -10,16 +10,20 @@ document.documentElement.style.setProperty(
   
 // navbar scrolling padding end
 
-let btn = document.querySelector(".dark");
+let a = true;
+let btn = document.getElementById("btn-chng-mode");
 btn.innerHTML="Change Mode";
-let changeMode = ()=> {
-    if (darkMode) {
-        darkMode()
+btn.addEventListener('click', function(e) {
+        if (a) {
+            darkMode()
+            a = false;
+        }
+        else{
+            lightMode()
+            a = true;
+        }
     }
-    else{
-        lightMode()
-    }
-}
+)
 
 // Dark mode
 
@@ -35,7 +39,7 @@ let darkMode = ()=>{
 // Light mode
 
 let lightMode = ()=>{
-    document.body.style.backgroundColor = "black";
+    document.body.style.backgroundColor = "#fff";
     document.documentElement.style.setProperty("--clr-primary","#333333");
     document.documentElement.style.setProperty("--clr-second","#4F4F4F");
     document.documentElement.style.setProperty("--clr-third","#828282");

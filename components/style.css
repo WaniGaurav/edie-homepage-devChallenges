@@ -177,26 +177,17 @@ html{
 /* Home section */
 
 .navBar{
-    /* margin-top: var(--navBar-margin); */
     width: min(100%, 1442px);
     margin: var(--navBar-margin) auto auto auto;
     position: sticky;
     top: 0;
-    /* border: 2px solid red; */
 }
-/* .sectionContent > :not(img){ */
 .sectionContent{
     /* width: min(100%, 880px); */
     width:880px;
-    /* width: fit-content; */
-    /* position: relative; */
-    /* left: 3.5rem; */
-    /* right: 3.5rem; */
     margin: auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* border: 2px solid red; */
 }
 
 .navItems{
@@ -205,8 +196,6 @@ html{
     font-weight: 500;
     line-height: 36px;
     letter-spacing: 0em;
-    /*text-align: left;*/
-    /* color: var(--clr-primary); */
 }
 .navHeading{
     font-family: Heebo;
@@ -214,19 +203,29 @@ html{
     font-weight: 800;
     line-height: 53px;
     letter-spacing: 0em;
-    /*text-align: left;*/
     color: var(--clr-nav-primary);
 }
 .darkDiv{
-    /* margin: var(--navBar-margin) auto auto auto; */
-    margin: 1rem 0.4rem;
-    display: flex;
-    justify-content: flex-end;
-    border: 2px solid green;
+    margin: 1rem auto auto auto;
+    width: 90rem;
+    position: relative;
+    text-align: right;
 }
 .dark{
-    /* align-content: end; */
-    color: #EB5757;
+    cursor: pointer;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size:0.8rem;
+    border-radius: 8px;
+    color: #f2f2f2;
+    background: #6d0ab4;
+    padding: 0.6rem;
+    text-align:center;
+    transition-duration: .15s;
+}
+.dark:hover{
+    color: #f2f2f2;
+    background: rgb(219, 57, 45);
 }
 .headinglink{
     margin-top: 96px;
@@ -236,7 +235,6 @@ html{
     font-weight: 500;
     line-height: 27px;
     letter-spacing: 0em;
-    /*text-align: left;*/
     color: #2D9CDB;
 }
 .heading{
@@ -261,7 +259,6 @@ html{
     width: min(100%, var(--heroImage-width));
     height: var(--heroImage-height);
     border-radius: 18px;
-    /* border: 12px solid brown; */
 }
 .subHeading-div{
     display: flex;
@@ -273,9 +270,7 @@ html{
     font-family: Poppins;
     font-size: var(--fs-subHeading);
     font-weight: 500;
-    /* line-height: 72px; */
     letter-spacing: 0em;
-    /*text-align: left;*/
     color: var(--clr-primary);    
 }
 .home-description{
@@ -287,7 +282,6 @@ html{
     font-weight: 400;
     line-height: 27px;
     letter-spacing: 0em;
-    /*text-align: left;*/
     color: var(--clr-second);;
 }
 .email-contact-div{
@@ -300,7 +294,6 @@ html{
     font-weight: 500;
     line-height: 21px;
     letter-spacing: 0em;
-    /*text-align: left;*/
     color: var(--clr-third);;
 }
 .email-div{
@@ -310,10 +303,9 @@ html{
     justify-content: flex-end;
     width: var(--email-div-width);
     height: var(--email-div-height);
-    /* border: solid 2px gold; */
     border-radius: 12px;
     background-color: #F2F2F2;
-    padding: 10px;
+    padding: 0.625rem;
 }
 .email-div input{
     width: auto;
@@ -349,7 +341,7 @@ html{
 /* Service section */
 .web-work{
     margin: auto;
-    width: min(100%,70rem);
+    /* width: min(100%,70rem); */
     border: 2px solid red;
 }
 .service-card-div{
@@ -376,19 +368,16 @@ html{
 }
 .cart-grid{
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(min(344px, 100%),3fr));
-    /* grid-template-columns: repeat( auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
     column-gap: var(--cart-grid-column-gap);
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-    border: 2px solid lawngreen;
+    /* border: 2px solid lawngreen; */
     
 }
 .service-cards{
     
     width: var(--service-cards-width);
     height: var(--service-cards-height);
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     padding: 2.875rem 2.063rem 0px 2.063rem;
 }
 .service-cards:hover{
@@ -772,10 +761,7 @@ html{
 /* Mobile */
 
 @media only screen and (max-width :600px){
-    /* .cart-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%),1fr));
-        column-gap: var(--cart-grid-column-gap);
-    } */
+    .cart-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
