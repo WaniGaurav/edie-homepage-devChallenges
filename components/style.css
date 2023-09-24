@@ -133,6 +133,7 @@ html{
         --email-div-height:4.25rem;
         --heroImage-width:21.75rem;
         --heroImage-height:9.063rem;
+        --service-card-div-width:0;
         --service-heading-width:16.188rem;
         --service-heading-height:4.5rem;
         --service-cards-width:21.313rem;
@@ -342,6 +343,10 @@ html{
 .web-work{
     margin: auto;
     /* width: min(100%,70rem); */
+    /* position: relative; */
+    /* left: -7rem; */
+    /* width: 880px; */
+    width: fit-content;
     border: 2px solid red;
 }
 .service-card-div{
@@ -478,6 +483,9 @@ html{
 }
 .work-gallary div:hover{
     box-shadow: 0px -25px 20px -20px rgba(8, 25, 174, 0.45), 25px 0 20px -20px rgba(8, 25, 174, 0.45), 0px 25px 20px -20px rgba(8, 25, 174, 0.45), -25px 0 20px -20px rgba(8, 25, 174, 0.45);
+}
+.img-container{
+    width: fit-content;
 }
 .img-container:hover{
     cursor: pointer;
@@ -700,6 +708,10 @@ html{
     width: 11.25rem;
     height: 11.25rem;
 
+    /* width: 13.25rem;
+    height: 11.25rem;
+    justify-self: right; */
+
 }
 .linksName{
     width: fit-content;
@@ -763,5 +775,19 @@ html{
 @media only screen and (max-width :600px){
     .cart-grid{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .work-gallary{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .clients-info-div{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footerGrid{
+        grid-template-columns: repeat(1, 1fr);
+        width: fit-content;
+        justify-items: start;
+    }
+    .footer{
+        display: grid;
     }
 }
