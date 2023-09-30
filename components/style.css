@@ -90,7 +90,7 @@ html{
 
 }
 
-@media (width < 700px){
+@media (width < 730px){
     :root{
         --navBar-margin:0.813rem;
         --heroImage-margin:0.938rem;
@@ -169,6 +169,7 @@ html{
 .container{
     width: max(100%, 1442px);
     margin: auto;
+    padding: 1rem;
 }
 .flexClass{
     display: flex;
@@ -177,18 +178,18 @@ html{
 
 /* Home section */
 
-.navBar{
-    width: min(100%, 1442px);
-    margin: var(--navBar-margin) auto auto auto;
-    position: sticky;
-    top: 0;
+.home-service{
+    margin: auto;
+    /* padding: 0.625rem; */
+    /* width:40rem; */
+    /* border: 3px solid salmon; */
 }
 .sectionContent{
     /* width: min(100%, 880px); */
     width:880px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .navItems{
@@ -347,7 +348,7 @@ html{
     /* left: -7rem; */
     /* width: 880px; */
     width: fit-content;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .service-card-div{
     width: var(--service-card-div-width);
@@ -688,7 +689,6 @@ html{
 
 .footer{
     margin-top: var(--footer-margon-top);
-    background-color: #100E1D;
     /* width: 90.125rem; */
 }
 
@@ -698,7 +698,9 @@ html{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    width: 90.125rem; 
+    width: 90.125rem;
+    background-color: #100E1D;
+    /* border: 2px solid slateblue; */
 }
 .navLinks a{
     cursor: pointer;
@@ -746,7 +748,7 @@ html{
 .devFooter{
     margin-top: 7.375rem;
     padding-bottom:1rem;
-    align-items: center;
+    grid-column: 1 / 4;
 }
 .devFooterText{
     font-family: Montserrat;
@@ -772,22 +774,59 @@ html{
 
 /* Mobile */
 
-@media only screen and (max-width :600px){
+@media only screen and (max-width :730px){
+    .container{
+        /* display: inline; */
+        width: 380px;
+        padding: 0.625rem;
+    }
+    .sectionContent{
+        width: fit-content;
+    }
+    .imgDiv{
+        left: 0;
+    }
     .cart-grid{
         grid-template-columns: repeat(1, 1fr);
     }
     .work-gallary{
         grid-template-columns: repeat(1, 1fr);
     }
+    .work-gallary div:nth-child(odd){
+        margin-top: 0;
+    }
+    .seemoreDiv{
+        margin-top: 2.3rem;
+        width: fit-content;
+        top: 0;
+        justify-content: flex-start;
+    }
     .clients-info-div{
         grid-template-columns: repeat(1, 1fr);
     }
     .footerGrid{
         grid-template-columns: repeat(1, 1fr);
-        width: fit-content;
-        justify-items: start;
+        width: 23rem;
+        justify-items: normal;
+        padding: 2rem 0 1rem 2rem;
+        /* padding: auto; */
     }
-    .footer{
+    /* .footer{
         display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    } */
+    .navLinks{
+        min-width: fit-content;
+        min-height: fit-content;
+    }
+    .aboutUs, .contactUs{
+        /* place-self: center; */
+        margin-top: 4rem;
+    }
+    .contactUs{
+        margin-bottom: 9.625rem;
+    }
+    .devFooter{
+        grid-column: auto;
     }
 }
