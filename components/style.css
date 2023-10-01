@@ -784,7 +784,7 @@ html{
     .container{
         /* display: inline; */
         width: 380px;
-        padding: 0.625rem;
+        padding:0;
     }
     .sectionContent{
         width: fit-content;
