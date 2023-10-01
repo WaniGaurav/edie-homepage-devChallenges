@@ -42,14 +42,17 @@
             <!-- Home section -->
             <div id="Home" class="home-service flexClass">
 
-                <div class="flexClass">
+                <div class="paddling-left flexClass">
                     <p class="headinglink">Unhappy with your website?</p>
                     <span class="heading">We create beautiful and fast web services</span>
                 </div>
                 <div class="imgDiv">
-                    <img class="heroImage" src="./images/heroImage.jpg" alt="Hero-Image">
+                    <picture>
+                        <source media="(min-width:730px)" srcset="./images/heroImage-desktop.jpg" />
+                        <img loading="lazy" class="heroImage" src="./images/heroImage.jpg" alt="Hero-Image">
+                    </picture>
                 </div>
-                <div class="subHeading-div">
+                <div class="paddling-left subHeading-div">
                     <span class="subHeading">Story, emotion and purposes</span>
                     <span class="home-description">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</span>
                     <div class="email-contact-div">
@@ -66,12 +69,12 @@
         <section class="web-work">
             <!-- Services section -->
             <div id="Services" class="service-card-div">
-                <span class="service-heading">We offer high demand services</span>
+                <span class="paddling-left service-heading">We offer high demand services</span>
             </div>
             <div class="cart-grid"></div>
             <!-- Our-works section -->
             <div id="Our" class="service-card-div">
-                <span class="our-heading">Good design means good business</span>
+                <span class="paddling-left our-heading">Good design means good business</span>
                 <div class="work-gallary"></div>
                 <div class="seemoreDiv">
                     <span class="see-more">see more</span><span class="arrow-right material-symbols-outlined">trending_flat</span>
@@ -89,7 +92,7 @@
                 <span class="reviewHeading">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</span>
                 <div class="reviewGrid">
                     <div class="column1">
-                        <img src="./images/person4.png" alt="member4" class="reviewerPic">
+                        <img loading="lazy" src="./images/person4.png" alt="member4" class="reviewerPic">
                     </div>
                     <div class="column2 flexClass">
                         <span class="reviewerName">Carlos Tran</span>

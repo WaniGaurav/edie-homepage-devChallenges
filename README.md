@@ -81,4 +81,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub: [@lostgirljourney]()
+- GitHub: [@WaniGaurav](https://github.com/WaniGaurav)

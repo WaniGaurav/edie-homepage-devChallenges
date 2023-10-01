@@ -47,6 +47,7 @@ html{
     --fs-workHeadline:1.5rem;
     --fs-see-more:1.5rem;
     --fs-reviewHeading:2.25rem;
+    --fs-home-description:1.125rem;
 
     --heading-width:33.938rem;
     --heading-height:9rem;
@@ -87,6 +88,8 @@ html{
     --review-width:69.75rem;
     --reviewHeading-width:58.563rem;
     --reviewHeading-height:10.125rem;
+    --home-description-width:22.875rem;
+    --home-description-height:8.563rem;
 
 }
 
@@ -120,6 +123,7 @@ html{
         --fs-workHeadline:1.125rem;
         --fs-see-more:1.125rem;
         --fs-reviewHeading:1.5rem;
+        --fs-home-description:0.75rem;
 
         --heading-width:17rem;
         --heading-height:4.5rem;
@@ -160,6 +164,8 @@ html{
         --review-width:22rem;
         --reviewHeading-width:21.938rem;
         --reviewHeading-height:11.25rem;
+        --home-description-width:17.188rem;
+        --home-description-height:4.625rem;
 
     }
 }
@@ -277,10 +283,10 @@ html{
 }
 .home-description{
     margin: var(--home-description-margin) 0;
-    width: 366px;
-    height: 137px;
+    width: var(--home-description-width);
+    height: var(--home-description-height);
     font-family: Poppins;
-    font-size: 18px;
+    font-size: var(--fs-home-description);
     font-weight: 400;
     line-height: 27px;
     letter-spacing: 0em;
@@ -368,7 +374,6 @@ html{
     font-family: Poppins;
     font-size: var(--fs-service-heading);
     font-weight: 500;
-    line-height: 54px;
     letter-spacing: 0em;
     color: var(--clr-primary);
 }
@@ -470,7 +475,8 @@ html{
     /* grid-template-columns: 1fr, 1fr; */
     position: relative;
     height: fit-content;
-    column-gap: 1.25rem;
+    /* column-gap: 1.25rem; */
+    gap: 1.25rem;
     /* border: 2px solid red; */
 }
 .work-gallary div:nth-child(odd){
@@ -495,7 +501,7 @@ html{
 .work-images{
     width: var(--work-images-width);
     height: var(--work-images-height);
-    border-radius: 12px;
+    border-radius: 24px;
     margin-bottom: 1.25rem;
 }
 .workTech{
@@ -782,6 +788,9 @@ html{
     }
     .sectionContent{
         width: fit-content;
+    }
+    .paddling-left{
+        padding-left: 2rem;
     }
     .imgDiv{
         left: 0;
