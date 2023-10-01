@@ -316,7 +316,7 @@ html{
     padding: 0.625rem;
 }
 .email-div input{
-    width: auto;
+    width: 12rem;
 }
 .email-div input,
 .email-div ::placeholder{
