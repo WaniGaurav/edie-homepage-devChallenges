@@ -1,13 +1,8 @@
 nav {
-    /* width: fit-content; */
     background-color: #7cc9d2;
     z-index: 899;
     --clr-nav-primary:#333333;
 }
-/* .navBar{
-    width: min(100%, 1442px);
-    margin: auto;
-} */
 .navBar{
     width: min(100%, 1442px);
     margin: var(--navBar-margin) auto auto auto;
@@ -48,7 +43,7 @@ nav li:first-child{
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.019);
@@ -80,10 +75,8 @@ nav li:first-child{
     }
     .sidebar{
         width: 100%;
-        /* width: fit-content; */
     }
     .menu-button{
         display: block;
-        height: 100%;
     }
 }

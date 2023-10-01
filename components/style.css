@@ -169,9 +169,6 @@ html{
 
     }
 }
-/* body{
-    overflow-x: hidden;
-} */
 .container{
     width: max(100%, 1442px);
     margin: auto;
@@ -186,16 +183,10 @@ html{
 
 .home-service{
     margin: auto;
-    /* padding: 0.625rem; */
-    /* width:40rem; */
-    /* border: 3px solid salmon; */
 }
 .sectionContent{
-    /* width: min(100%, 880px); */
     width:880px;
     margin: auto;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .navItems{
@@ -252,7 +243,6 @@ html{
     font-size: var(--fs-heading);
     font-weight: 500;
     letter-spacing: 0em;
-    /*text-align: left;*/
     color: var(--clr-primary);
 }
 .imgDiv{
@@ -322,7 +312,6 @@ html{
     font-size: var(--fs-email-div_input);
     font-weight: 500;
     letter-spacing: 0em;
-    /*text-align: left;*/
     color: #BDBDBD;
     background-color: #f2f2f2;
     border: 0;
@@ -344,22 +333,13 @@ html{
 /* Service section */
 .web-work{
     margin: auto;
-    /* width: min(100%,70rem); */
-    /* position: relative; */
-    /* left: -7rem; */
-    /* width: 880px; */
     width: fit-content;
-    /* border: 2px solid red; */
 }
 .service-card-div{
     width: var(--service-card-div-width);
     position: relative;
-    /* left: -6.7rem; */
     display: flex;
     flex-direction: column;
-    /* display: grid; */
-    /* grid-template-columns: repeat(1, 1fr); */
-    /* grid-template-columns: repeat(auto-fit, minmax(min(800px, 100%), 1fr)); */
 }
 .service-heading{
     margin-top: var(--service-heading-margin-top);
@@ -376,14 +356,12 @@ html{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: var(--cart-grid-column-gap);
-    /* border: 2px solid lawngreen; */
     
 }
 .service-cards{
     
     width: var(--service-cards-width);
     height: var(--service-cards-height);
-    /* border: 2px solid violet; */
     padding: 2.875rem 2.063rem 0px 2.063rem;
 }
 .service-cards:hover{
@@ -396,7 +374,6 @@ html{
     width: 4.188rem;
     height: 4.188rem;
     border-radius: 16px;
-    /* background-color: #2D9CDB; */
 }
 .symbol-design{
     color: #FFFFFF;
@@ -413,7 +390,6 @@ html{
     font-size: var(--fs-service-name);
     font-weight: 700;
     letter-spacing: 0em;
-    /*text-align: left;*/
     color: var(--clr-primary);
 }
 .service-name-desc{
@@ -421,7 +397,6 @@ html{
     font-size: var(--fs-service-name-desc);
     font-weight: 400;
     letter-spacing: 0em;
-    /*text-align: left;*/
     color: var(--clr-second);;
 }
 .service-start{
@@ -435,11 +410,9 @@ html{
     font-weight: 500;
     letter-spacing: 0em;
     color: var(--clr-third);
-    /* color: #828282; */
     background-color: #E0E0E0;
     
 }
-/* .service-card-div button:hover{ */
 .service-start:hover{
     cursor: pointer;
     color: #FFFFFF;
@@ -459,17 +432,13 @@ html{
     font-weight: 500;
     letter-spacing: 0em;
     color: var(--clr-primary);
-    /* border: 2px solid red; */
 }
 .work-gallary{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-columns: 1fr, 1fr; */
     position: relative;
     height: fit-content;
-    /* column-gap: 1.25rem; */
     gap: 1.25rem;
-    /* border: 2px solid red; */
 }
 .work-gallary div:nth-child(odd){
     margin-top: 11rem;
@@ -503,7 +472,6 @@ html{
     font-size: var(--fs-workTech);
     font-weight: 300;
     letter-spacing: 0em;
-    /* color: var(--clr-third); */
     color: #828282;
 }
 .workHeadline{
@@ -533,7 +501,6 @@ html{
     font-size: var(--fs-see-more);
     font-weight: 500;
     letter-spacing: 0em;
-    /*text-align: left;*/
     color: #2D9CDB;
 }
 .arrow-right{
@@ -553,20 +520,14 @@ html{
     margin-top: var(--Clients-margin-top);
     width: var(--Clients-width);
     position: relative;
-    /* left: -7rem; */
-    /* border: 2px solid red; */
 }
 .clients-info-div{
     display: grid;
-    /* grid-template-rows: repeat(2, 1fr); */
     grid-template-columns: repeat(2, 1fr);
     gap: var(--clients-info-div-gap);
 }
 .teamInfo{
-    /* display: flex;
-    flex-direction: column; */
     width: 17.5rem;
-    /* height: 258px; */
     justify-content: center;
 }
 .teamPicture{
@@ -632,8 +593,6 @@ html{
     margin-top: var(--review-margin-top);
     width: var(--review-width);
     position: relative;
-    /* left: -7rem; */
-    /* border: 2px solid red; */
 }
 
 .reviewHeading{
@@ -643,7 +602,6 @@ html{
     font-size: var(--fs-reviewHeading);
     font-weight: 500;
     letter-spacing: 0em;
-    /*text-align: left;*/
     color: var(--clr-primary);    
 }
 .reviewGrid{
@@ -652,7 +610,6 @@ html{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap:1.875rem;
-    /* border: 2px solid green; */
 }
 .reviewerPic{
     width: 5.125rem;
@@ -678,7 +635,6 @@ html{
     font-size: 1.125rem;
     font-weight: 500;
     letter-spacing: 0em;
-    /* color: var(--clr-third);     */
     color: #828282;    
 }
 
@@ -687,7 +643,6 @@ html{
 
 .footer{
     margin-top: var(--footer-margon-top);
-    /* width: 90.125rem; */
 }
 
 .footerGrid{
@@ -698,7 +653,6 @@ html{
     justify-items: center;
     width: 90.125rem;
     background-color: #100E1D;
-    /* border: 2px solid slateblue; */
 }
 .navLinks a{
     cursor: pointer;
@@ -707,11 +661,6 @@ html{
 .navLinks{
     width: 11.25rem;
     height: 11.25rem;
-
-    /* width: 13.25rem;
-    height: 11.25rem;
-    justify-self: right; */
-
 }
 .linksName{
     width: fit-content;
@@ -774,7 +723,6 @@ html{
 
 @media only screen and (max-width :730px){
     .container{
-        /* display: inline; */
         width: 380px;
         padding:0;
     }
@@ -813,18 +761,12 @@ html{
         width: 23rem;
         justify-items: normal;
         padding: 2rem 0 1rem 2rem;
-        /* padding: auto; */
     }
-    /* .footer{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    } */
     .navLinks{
         min-width: fit-content;
         min-height: fit-content;
     }
     .aboutUs, .contactUs{
-        /* place-self: center; */
         margin-top: 4rem;
     }
     .contactUs{

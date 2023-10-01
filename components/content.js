@@ -1,7 +1,7 @@
 // navbar scrolling padding
-const navigation = document.querySelector(".navBar")
+let navigation = document.querySelector(".navBar")
 
-const navigationHeight = navigation.offsetHeight;
+let navigationHeight = navigation.offsetHeight;
 
 document.documentElement.style.setProperty(
   "--scroll-padding",
@@ -12,14 +12,16 @@ document.documentElement.style.setProperty(
 
 let a = true;
 let btn = document.getElementById("btn-chng-mode");
-btn.innerHTML="Change Mode";
+btn.innerHTML="Dark Mode";
 btn.addEventListener('click', function(e) {
-        if (a) {
-            darkMode()
-            a = false;
-        }
-        else{
-            lightMode()
+    if (a) {
+        btn.innerHTML="Light Mode";
+        darkMode()
+        a = false;
+    }
+    else{
+        btn.innerHTML="Dark Mode";
+        lightMode()
             a = true;
         }
     }
