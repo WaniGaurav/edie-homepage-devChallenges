@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://legacy.devchallenges.io/solutions/fuFpNR0WNJPdQpVbQ4qB">
       Solution
     </a>
     <span> | </span>
@@ -38,10 +38,10 @@
     </tr>
     <tr>
       <td>
-        <img src = "assets/screenshots/dark-desktop.jpeg">
+        <img src = "/images/screenshots/Desktop-dark.png">
       </td>
       <td>
-        <img src = "assets/screenshots/dark-mobile.jpeg">
+        <img src = "/images/screenshots/Mobile-dark.png">
       </td>
     </tr>
   </table>
@@ -55,10 +55,10 @@
     </tr>
     <tr>
       <td>
-        <img src = "assets/screenshots/light-desktop.jpeg">
+        <img src = "/images/screenshots/Desktop-light.png">
       </td>
       <td>
-        <img src = "assets/screenshots/light-mobile.jpeg">
+        <img src = "/images/screenshots/Mobile-light.png">
       </td>
     </tr>
   </table>
