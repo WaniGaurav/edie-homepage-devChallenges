@@ -101,7 +101,7 @@ html{
         --service-heading-margin-top:6.375rem;
         --service-heading-margin-bottom:2.875rem;
         --cart-grid-row-gap:2.5rem;
-        --Our-margin-top:11rem;
+        --Our-margin-top:6.375rem;
         --Clients-margin-top:6.25rem;
         --clients-info-div-gap:2.25rem;
         --teamPicture-gap:0.557rem;
@@ -142,7 +142,7 @@ html{
         --service-heading-height:4.5rem;
         --service-cards-width:21.313rem;
         --service-cards-height:26.375rem;
-        --our-heading-width:16.688rem;
+        --our-heading-width:17.688rem;
         --our-heading-height:4.5rem;
         --work-images-width:21.938rem;
         --work-images-height:21.938rem;
@@ -241,7 +241,6 @@ html{
     font-family: Poppins;
     font-size: var(--fs-headinglink);
     font-weight: 500;
-    line-height: 27px;
     letter-spacing: 0em;
     color: #2D9CDB;
 }
@@ -288,7 +287,6 @@ html{
     font-family: Poppins;
     font-size: var(--fs-home-description);
     font-weight: 400;
-    line-height: 27px;
     letter-spacing: 0em;
     color: var(--clr-second);;
 }
@@ -300,7 +298,6 @@ html{
     font-family: Poppins;
     font-size: var(--fs-email-contact-heading);
     font-weight: 500;
-    line-height: 21px;
     letter-spacing: 0em;
     color: var(--clr-third);;
 }
@@ -324,7 +321,6 @@ html{
     font-family: Poppins;
     font-size: var(--fs-email-div_input);
     font-weight: 500;
-    line-height: 27px;
     letter-spacing: 0em;
     /*text-align: left;*/
     color: #BDBDBD;
@@ -341,7 +337,6 @@ html{
     font-family: Poppins;
     font-size: var(--fs-blue-join);
     font-weight: 500;
-    line-height: 27px;
     letter-spacing: 0em;
     color: #F2F2F2;
 }
@@ -417,7 +412,6 @@ html{
     font-family: Poppins;
     font-size: var(--fs-service-name);
     font-weight: 700;
-    line-height: 36px;
     letter-spacing: 0em;
     /*text-align: left;*/
     color: var(--clr-primary);
@@ -426,7 +420,6 @@ html{
     font-family: Poppins;
     font-size: var(--fs-service-name-desc);
     font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0em;
     /*text-align: left;*/
     color: var(--clr-second);;
@@ -440,7 +433,6 @@ html{
     font-family: Poppins;
     font-size: var(--fs-service-start);
     font-weight: 500;
-    line-height: 24px;
     letter-spacing: 0em;
     color: var(--clr-third);
     /* color: #828282; */
@@ -803,6 +795,9 @@ html{
     }
     .work-gallary div:nth-child(odd){
         margin-top: 0;
+    }
+    .our-heading{
+        margin-bottom: 3rem;
     }
     .seemoreDiv{
         margin-top: 2.3rem;
